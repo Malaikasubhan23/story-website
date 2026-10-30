@@ -1,0 +1,572 @@
+/* header */
+header {
+    height: 520px;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                      url("https://images.unsplash.com/photo-1544947950-fa07a98d237f");
+    background-size: cover;
+    background-position: center;
+    color: #f5e6c8;
+    position: relative;
+    font-family: Georgia, serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.site-title {
+    position: absolute;
+    top: 35px;
+    left: 45px;
+}
+
+.site-title h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: normal;
+    color: #f5e6c8;
+}
+
+.welcome {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    font-style: italic;
+    margin: 0 0 30px;
+    font-weight: normal;
+    color: #f5e6c8;
+    position: relative;
+}
+
+.welcome h2::before,
+.welcome h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: #f5e6c8;
+    vertical-align: middle;
+    margin: 0 18px;
+}
+
+.divider{
+    color: #f5e6c8;
+    font-size: 18px;
+    margin: -25px 0 15px;
+}
+
+.welcome p {
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+    color: #f5e6c8;
+}
+
+.tagline {
+    margin-top: 30px;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #f5e6c8;
+}
+
+/* navbar */
+nav {
+    background-color: #111;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    color: #f5e6c8;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    transition: 0.3s;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    color: #d4af37;
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
+}
+
+/* characters */
+.characters {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f8f3e8;
+    opacity: 0.9px;
+}
+
+.character-container{
+    display: grid;
+    grid-template-columns:repeat(2, 350px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.character-card {
+    width: 350px;
+    padding: 25px;
+    background-color: #f5e6c8;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    text-align: left;
+    box-sizing: border-box;
+    min-height: 300px;
+    transition: 0.3s;
+}
+
+.character-card h3 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #2f2525;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.character-card p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4a3f3f;
+    margin: 0;
+}
+
+.keeper {
+    grid-column: 1 / 3;
+    justify-self: center;
+}
+
+.character-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* story section */
+.story{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    border: 5px black solid;
+    border-radius: 40px;
+    padding: 60px 40px;
+    background-color: #f8f3e8;
+}
+.story h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #2f2525;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.story h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    color: #2f2525;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.story p{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+strong{
+    font-style: italic;
+    color: #4a3f3f;
+}
+.chapter{
+    background-color:#f5e6c8;
+    padding: 3px;
+}
+.chapter2{
+    background-color:#ead8b7;
+    padding: 3px;
+}
+.chapter3{
+    background-color: #f5e6c8;
+    padding: 3px;
+}
+.chapter4{
+    background-color:#ead8b7;
+    padding: 3px;
+}
+.chapter5{
+    background-color:#f5e6c8;
+    padding: 3px;
+}
+.chapter6{
+    background-color: #ead8b7;
+    padding: 3px;
+}
+.chapter7{
+    background-color:#f5e6c8;
+    padding: 3px;
+}
+.chapter8{
+    background-color: #ead8b7;
+    padding: 3px;
+}
+.story:last-child{
+    margin-bottom: 0;
+}
+.chapter1,
+.chapter2,
+.chapter3,
+.chapter4,
+.chapter5,
+.chapter6,
+.chapter7,
+.chapter8 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Chapter heading golden divider */
+
+.chapter1 h3::after,
+.chapter2 h3::after,
+.chapter3 h3::after,
+.chapter4 h3::after,
+.chapter5 h3::after,
+.chapter6 h3::after,
+.chapter7 h3::after,
+.chapter8 h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 15px auto 0;
+}
+
+
+/* First letter of every chapter */
+
+.chapter p:first-of-type::first-letter,
+.chapter2 p:first-of-type::first-letter,
+.chapter3 p:first-of-type::first-letter,
+.chapter4 p:first-of-type::first-letter,
+.chapter5 p:first-of-type::first-letter,
+.chapter6 p:first-of-type::first-letter,
+.chapter7 p:first-of-type::first-letter,
+.chapter8 p:first-of-type::first-letter {
+    font-size: 38px;
+    font-weight: bold;
+    color: #7a5a00;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+
+/* Hover effect */
+
+.chapter1:hover,
+.chapter2:hover,
+.chapter3:hover,
+.chapter4:hover,
+.chapter5:hover,
+.chapter6:hover,
+.chapter7:hover,
+.chapter8:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(47, 37, 37, 0.2);
+}
+.chapter-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.chapter-nav a {
+    text-decoration: none;
+    color: #2f2525;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 1px solid #d4af37;
+    border-radius: 20px;
+    background-color: #ead8b7;
+    transition: 0.3s ease;
+}
+
+.chapter-nav a:hover {
+    background-color: #d4af37;
+    color: #fff;
+    transform: translateY(-2px);
+}
+.chapter p,
+.chapter2 p,
+.chapter3 p,
+.chapter4 p,
+.chapter5 p,
+.chapter6 p,
+.chapter7 p,
+.chapter8 p {
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+.chapter,
+.chapter2,
+.chapter3,
+.chapter4,
+.chapter5,
+.chapter6,
+.chapter7,
+.chapter8 {
+    position: relative;
+}
+.chapter::before,
+.chapter2::before,
+.chapter3::before,
+.chapter4::before,
+.chapter5::before,
+.chapter6::before,
+.chapter7::before,
+.chapter8::before {
+    content: "✦";
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    color: #d4af37;
+    font-size: 18px;
+}
+.story-ending {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 20px;
+}
+
+.story-ending p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #5c4740;
+    margin-bottom: 15px;
+}
+
+.story-ending span {
+    color: #d4af37;
+    font-size: 24px;
+}
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #2f2525;
+    border: 1px solid #d4af37;
+    border-radius: 20px;
+    background-color: #ead8b7;
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #d4af37;
+    color: white;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+
+    .story {
+        padding: 40px 20px;
+    }
+
+    .story h2 {
+        font-size: 34px;
+    }
+
+    .chapter1,
+    .chapter2,
+    .chapter3,
+    .chapter4,
+    .chapter5,
+    .chapter6,
+    .chapter7,
+    .chapter8 {
+        padding: 25px 20px;
+        margin-bottom: 35px;
+    }
+
+    .chapter1 h3,
+    .chapter2 h3,
+    .chapter3 h3,
+    .chapter4 h3,
+    .chapter5 h3,
+    .chapter6 h3,
+    .chapter7 h3,
+    .chapter8 h3 {
+        font-size: 24px;
+    }
+
+    .chapter1 p,
+    .chapter2 p,
+    .chapter3 p,
+    .chapter4 p,
+    .chapter5 p,
+    .chapter6 p,
+    .chapter7 p,
+    .chapter8 p {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .chapter-nav {
+        gap: 8px;
+    }
+
+    .chapter-nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .story-ending p {
+        font-size: 18px;
+    }
+}
+.footer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2f2525;
+    color: #f5e6c8;
+}
+
+.footer h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    color: #d4af37;
+    margin-bottom: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #f8f3e8;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.welcome-text {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #7a5a00;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-style: italic;
+    color: #2f2525;
+    margin-bottom: 20px;
+}
+
+.home-content > p:not(.welcome-text) {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #5c4740;
+    margin-bottom: 30px;
+}
+
+.explore-button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    color: #2f2525;
+    background-color: #ead8b7;
+    border: 1px solid #d4af37;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #d4af37;
+    color: white;
+    transform: translateY(-2px);
+}
+.about {
+    padding: 70px 40px;
+    background-color: #ead8b7;
+    color: #2f2525;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 22px;
+}
